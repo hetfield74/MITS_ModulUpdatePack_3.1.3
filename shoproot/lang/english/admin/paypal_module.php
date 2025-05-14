@@ -1,6 +1,6 @@
 <?php
 /* -----------------------------------------------------------------------------------------
-   $Id: paypal_module.php 16400 2025-04-02 15:29:16Z GTB $
+   $Id: paypal_module.php 16441 2025-05-06 11:28:15Z GTB $
 
    modified eCommerce Shopsoftware
    http://www.modified-shop.org
@@ -89,6 +89,9 @@ $lang_array = array(
 
   'TEXT_PAYPAL_BUTTON_HEIGHT' => 'Button Height',
   'TEXT_PAYPAL_BUTTON_HEIGHT_INFO' => 'Select the button height in pixels (min: 22 max: 55)',
+
+  'TEXT_PAYPAL_COMPANY_LABEL' => 'Company Label',
+  'TEXT_PAYPAL_COMPANY_LABEL_INFO' => 'Use the company name what should be displayed on the bank or credit card statement. <b>Attention:</b> no specialchars or german umlauts allowed!',
 );
 
 

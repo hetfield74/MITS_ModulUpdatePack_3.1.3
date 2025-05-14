@@ -1,6 +1,6 @@
 <?php
 /* -----------------------------------------------------------------------------------------
-   $Id: PayPalPaymentBase.php 16405 2025-04-04 10:41:04Z Tomcraft $
+   $Id: PayPalPaymentBase.php 16446 2025-05-12 10:46:58Z Tomcraft $
 
    modified eCommerce Shopsoftware
    http://www.modified-shop.org
@@ -57,7 +57,7 @@ class PayPalPaymentBase extends PayPalCommon {
     global $order;
 
     $this->code = $class;
-    $this->paypal_version = '1.101';
+    $this->paypal_version = '1.102';
 
     $this->admin_access_array = array(
       'paypal_info',

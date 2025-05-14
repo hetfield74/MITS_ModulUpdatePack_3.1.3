@@ -1,6 +1,6 @@
 <?php
 /* -----------------------------------------------------------------------------------------
-   $Id: paypal_module.php 16403 2025-04-02 15:52:29Z GTB $
+   $Id: paypal_module.php 16441 2025-05-06 11:28:15Z GTB $
 
    modified eCommerce Shopsoftware
    http://www.modified-shop.org
@@ -360,6 +360,16 @@ require (DIR_WS_INCLUDES.'head.php');
                       <td class="dataTableConfig col-left"><?php echo TEXT_PAYPAL_MODULE_CHECKOUT_BNPL; ?></td>
                       <td class="dataTableConfig col-middle"><?php echo draw_on_off_selection('config[profile][MODULE_PAYMENT_'.strtoupper($module->code).'_SHOW_CHECKOUT_BNPL]', $status_array, (($paypal->get_config('MODULE_PAYMENT_'.strtoupper($module->code).'_SHOW_CHECKOUT_BNPL') == '1') ? true : false)); ?></td>
                       <td class="dataTableConfig col-right"><?php echo TEXT_PAYPAL_MODULE_CHECKOUT_BNPL_INFO; ?></td>
+                    </tr>
+                    <?php
+                  }
+
+                  if ($module->code == 'paypalapplepay') {
+                    ?>
+                    <tr>
+                      <td class="dataTableConfig col-left"><?php echo TEXT_PAYPAL_COMPANY_LABEL; ?></td>
+                      <td class="dataTableConfig col-middle"><?php echo xtc_draw_input_field('config[profile][PAYPAL_COMPANY_LABEL]', $paypal->get_config('PAYPAL_COMPANY_LABEL'), 'style="width: 300px;"'); ?></td>
+                      <td class="dataTableConfig col-right"><?php echo TEXT_PAYPAL_COMPANY_LABEL_INFO; ?></td>
                     </tr>
                     <?php
                   }

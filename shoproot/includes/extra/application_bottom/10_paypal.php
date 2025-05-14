@@ -1,6 +1,6 @@
 <?php
 /* -----------------------------------------------------------------------------------------
-   $Id: 10_paypal.php 16400 2025-04-02 15:29:16Z GTB $
+   $Id: 10_paypal.php 16422 2025-04-29 10:18:18Z GTB $
 
    modified eCommerce Shopsoftware
    http://www.modified-shop.org
@@ -267,7 +267,7 @@
           $paypalscript .= '
           if ($(".pp-message").length) {
             paypal.Messages({
-              amount: '.$total.',
+              amount: '.sprintf($paypal->numberFormat, $total).',
               countryCode: "'.$countries_iso_code_2.'",
               style: {
                 layout: "'.((basename($PHP_SELF) == FILENAME_PRODUCT_INFO) ? 'text' : 'flex').'",

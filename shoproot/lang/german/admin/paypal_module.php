@@ -1,6 +1,6 @@
 <?php
 /* -----------------------------------------------------------------------------------------
-   $Id: paypal_module.php 16400 2025-04-02 15:29:16Z GTB $
+   $Id: paypal_module.php 16443 2025-05-06 16:30:00Z Tomcraft $
 
    modified eCommerce Shopsoftware
    http://www.modified-shop.org
@@ -89,6 +89,9 @@ $lang_array = array(
 
   'TEXT_PAYPAL_BUTTON_HEIGHT' => 'Button H&ouml;he',
   'TEXT_PAYPAL_BUTTON_HEIGHT_INFO' => 'W&auml;hlen Sie die Button H&ouml;he in Pixeln (min: 22 max: 55)',
+
+  'TEXT_PAYPAL_COMPANY_LABEL' => 'Firmenname',
+  'TEXT_PAYPAL_COMPANY_LABEL_INFO' => 'Firmenname, der auf der Bank- oder Kreditkartenabrechnung angezeigt wird. <b>Achtung:</b> Keine Sonderzeichen oder Umlaute!',
 );
 
 
