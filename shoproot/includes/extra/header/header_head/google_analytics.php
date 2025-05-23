@@ -1,6 +1,6 @@
 <?php
 /* -----------------------------------------------------------------------------------------
-   $Id: google_analytics.php 16420 2025-04-29 10:01:14Z GTB $
+   $Id: google_analytics.php 16454 2025-05-16 09:31:16Z AGI $
 
    modified eCommerce Shopsoftware
    http://www.modified-shop.org
@@ -411,7 +411,7 @@ function pushgTagEventAction() {";
     address: {
       sha256_first_name: '".hash('sha256', strtolower(trim($order->customer['firstname'])))."',
       sha256_last_name: '".hash('sha256', strtolower(trim($order->customer['lastname'])))."',
-      street: '".$order->customer['address']."',
+      street: '".$order->customer['street_address']."',
       city: '".$order->customer['city']."',
       region: '".$order->customer['state']."',
       postal_code: '".$order->customer['postcode']."',
